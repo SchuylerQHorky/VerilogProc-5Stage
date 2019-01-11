@@ -1,0 +1,37 @@
+module Tester(a, b, cin, sum, cout, overflow);
+
+	output reg [63:0] a, b;
+	//reg    [63:0] A, B;
+	output reg cin;
+
+	input wire [63:0] sum;
+	//wire  [63:0] result;
+
+	input cout, overflow;
+	//reg   negative, zero, overflow, carry_out;
+
+	parameter simDelay = 5;
+	initial begin
+		//$display("clk\trst\tTime");
+		//$monitor("%b\t%b\t%b\t%d",OUT, SEL, IN,$time);
+	end
+
+
+
+	initial begin
+		  cin = 1'b0;
+		   a = 64'h0000000000000004;
+		   b = 64'h0000000000000003;
+		
+		#5 $finish;
+	end
+/*
+	always begin
+		//#simDelay SerialClock = !SerialClock;
+	end
+
+	always begin
+		//#1 CLOCK_50 = !CLOCK_50;
+	end
+	*/
+endmodule

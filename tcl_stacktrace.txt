@@ -1,0 +1,5 @@
+Wed Feb 14 17:48:17 PST 2018
+Trace back: 
+    (command bound to event)
+  <2:C:/Tools/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {}
+  <1:eval:1: ::tk::dialog::error::bgerror {}
